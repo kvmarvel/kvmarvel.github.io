@@ -1,0 +1,38 @@
+.connected-carousels .carousel-stage {
+    height: 560px;
+}
+.connected-carousels .carousel-stage ul li {
+    cursor: pointer;
+    position: relative;
+}
+.connected-carousels .carousel-stage ul li .preloader {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 560px;
+}
+.connected-carousels .carousel-stage ul li .preloader:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -32px;
+    margin-left: -32px;
+    width: 64px;
+    height: 64px;
+    background: url('../images/mZn5d5iJxgL3.png') 0px 0px no-repeat;
+    animation: preloader .7s steps(8) infinite;
+    -webkit-animation: preloader .7s steps(8) infinite;
+}
+
+@keyframes preloader {
+    0% { background-position: 0px 0px; }
+    100% { background-position: -512px 0px; }
+}
+
+@-webkit-keyframes preloader {
+    0% { background-position: 0px 0px; }
+    100% { background-position: -512px 0px; }
+}
